@@ -33,6 +33,10 @@ version = libraryVersion
 description = artifact
 sourceCompatibility = '11'
 
+bootJar {
+    enabled = false
+}
+
 tasks.register("sourcesJar", Jar) {
     from sourceSets.main.allJava
     classifier "sources"
